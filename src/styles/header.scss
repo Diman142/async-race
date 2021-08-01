@@ -1,0 +1,39 @@
+.header{
+
+  &-nav{
+    display: flex;
+
+    &__item{
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+    }
+
+    &__link {
+      box-sizing: border-box;
+      display: inline-block;
+      padding-top: 5px;
+      width: 100px;
+      height: 30px;
+      background-color: rgb(173, 235, 30);
+      font-weight: 600;
+      color: rgb(118, 16, 235);
+      border-radius: 5px;
+      text-align: center;
+      transition: all .15s ease-in;
+
+      &:hover{
+        background-color: rgb(29, 212, 5);
+        color: rgb(107, 5, 202);
+      }
+
+      &:active {
+        background-color: rgb(9, 163, 4);
+        color: rgb(82, 1, 158);
+      }
+    }
+  }
+
+}
+
+
